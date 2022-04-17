@@ -1,0 +1,43 @@
+#tst1{font-size: 40px;}
+h1#tst1{font-style: oblique;}
+#tst2{
+  text-align: center;}
+p.dotted{
+  margin: 30px;
+  outline-offset: 25px;
+  text-align: center;
+  outline-style: dotted;}
+body{
+  font-size: 20px;
+  color:#483D8B;
+  background-color: #ADD8E6}
+h1{
+  color:#483D8B;
+  text-align: center;}
+button{
+  font-size: 20px;
+  font-style: oblique;
+  color:#483D8B;}
+.divCss{
+
+  	margin-bottom: 60px;}
+.olCss{
+
+  	padding-left: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  	margin-left: 40px;}
+  .inputClass {
+
+  	float: left;
+  	margin-left: -50px;}
+  .liRight {
+    }
+  input[type="value"]{
+    text-align: center;}
+    address {
+    border-top: dotted;
+    margin-top: auto;
+    text-align: right;
+    font-size: 35px;
+  margin-right: 160px;}
