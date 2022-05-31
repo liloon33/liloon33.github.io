@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<metacharset="utf-8">
+<metaname="viewport"content="width=device-width, initial-scale=1">
+<title>Welcome to Family Guy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+body{
+  background-color: #c8d8e5;
+}
+.carousel img{
+  width: 100%;
+  height: 100%;
+}
+  .carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+#abc{
+  width: 70%
+}
+#aaa{
+  width: 70%
+}
+.container{
+  padding-top: 120px;
+
+}
+.col{
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: 30px;
+  border-width: medium;
+  border-color: #293f76;
+
+}
+.down {
+	background-color: #;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 40px;
+}
+.f82 {
+	font-size: 0.82px;
+	color: #4c4c4c;
+	line-height: 28px;
+	letter-spacing:1px;
+}
+.f75 {
+	font-size: 0.75px;
+	color: #a0a2a0;
+	line-height: 30px;
+	letter-spacing:1px;
+}
+body {
+font-family: 'Poppins', sans-serif;
+color: #737789;
+font-size: 18px;
+line-height: 36px;
+font-weight: 400;
+
+}
+  .title{
+      margin-top: -50px;
+      margin-bottom: 90px;
+  }
+
+  .title h3{
+      font-size: 35px;
+  }
+
+
+
+.team-one {
+padding-top: 120px;
+padding-bottom: 90px;
+position: relative;
+}
+[class*=bg-shape-] {
+position: absolute;
+}
+.shape {
+top: 35px;
+left: 0;
+}
+
+.team-one .container {
+position: relative;
+}
+.single {
+margin-bottom: 30px;
+border-radius: 5px;
+box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
+text-align: center;
+position: relative;
+padding-bottom: 60px;
+padding-top: 57px;
+transform: scaleY(1);
+transform-origin: top;
+transition: transform 500ms ease;
+}
+.single:hover {
+transform: scaleY(1.20);
+}
+.inner {
+transform-origin: top;
+transition: transform 500ms ease;
+transform: scaleY(1);
+}
+.single:hover .inner {
+ transform: scaleY(.8);
+}
+.image {
+width: 278px;
+margin-left:auto;
+margin-right: auto;
+border-radius: 50%;
+overflow: hidden;
+border: 5px solid #fff;
+transition: all 500ms ease;
+
+}
+
+
+.single:hover .image {
+border: 5px solid white;
+}
+.single h3 {
+margin: 0;
+font-size: 25px;
+font-weight: bold;
+color: #252c4b;
+line-height: 1em;
+transition: all 500ms ease;
+}
+.single p {
+color: #737789;
+margin: 0;
+line-height: 1em;
+font-size: 14px;
+margin-top: 12px;
+margin-bottom: 44px;
+transition: all 500ms ease;
+}
+.single:hover p,
+.single:hover h3 {
+color: #fff;
+}
+.social {
+position: absolute;
+bottom: -70px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 11;
+visibility: hidden;
+opacity: 0;
+transition: all 500ms ease;
+
+}
+.single:hover .social {
+opacity: 1;
+visibility: visible;
+}
+.social>a {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #fff;
+opacity: 0.3;
+transition: all 500ms ease;
+
+}
+.social>a i {
+color: #737789;
+transition: all 500ms ease;
+font-size: 16px;
+border: 2px solid white deepskyblue;
+}
+.social>a:hover {
+opacity: 1;
+}
+.social>a:hover i {
+color: #fd632f;
+}
+.social a+a {
+margin-left: 10px;
+}
+.circle::before {
+position: absolute;
+top: 0;
+right: 0;
+width: 153px;
+height: 117px;
+content: '';
+background-image: url(team-circle-1-1.png);
+transform: perspective(200px) scaleX(0) scaleY(0);
+transition: transform 500ms ease, opacity 500ms ease;
+opacity: 0;
+transform-origin: right top;
+}
+.circle::after {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 140px;
+height: 156px;
+content: '';
+background-image: url(team-circle-1-2.png);
+transform: perspective(150px) scaleX(0) scaleY(0);
+transition: transform 500ms ease, opacity 500ms ease;
+opacity: 0;
+transform-origin: left bottom;
+}
+.single:hover .circle::before,
+.single:hover .circle::after {
+opacity: 0.3;
+transform: perspective(200px) scaleX(1) scaleY(.8);
+}
+.single::before {
+content: '';
+border-radius: 5px;
+background-image: linear-gradient(90deg, #698bb8,#dce7f9);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+transform: scale(1, 0);
+transform-origin: bottom;
+transition: transform 500ms ease;
+
+}
+.single:hover::before {
+
+     transform: scale(1, 1);
+     transform-origin: top;
+}
+  .inner{
+      position: relative;
+  }
+
+  a:hover{
+      text-decoration: none;
+  }
+
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="a"></a>
+    <img src="img/hi.png"width="107" height="60"/>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="moc.html">Meet Our Casts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ts.html">Theme Song</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="qo.html">Quick Overview</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" id="abc">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/j4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/j2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/j3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  <section class="team-one" id="team">
+      <img src="faq-bg-1-1.png" class="bg-shape-1" alt="">
+      <div class="container">
+          <div class="title text-center">
+              <p>              </p>
+              <h3>Meet Our Characters <br> Team Members</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div><!-- /.team-one__circle -->
+                      <div class="inner">
+                          <h3>PETER GRIFFIN</h3>
+                          <p>stupid Irishman</p>
+                          <div class="image">
+                              <img src="img/peter.jpg" alt="">
+                          </div><!-- /.team-one__image -->
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div><!-- /.team-one__single -->
+              </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>LOIS GRIFFIN</h3>
+                          <p>hot MILF</p>
+                          <div class="image">
+                              <img src="img/lois.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>MEG GRIFFIN</h3>
+                          <p>unpopular teenager</p>
+                          <div class="image">
+                              <img src="img/meg.jpg" alt="">
+                          </div><!-- /.team-one__image -->
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>CHRIS GRIFFIN</h3>
+                          <p>immature kid</p>
+                          <div class="image">
+                              <img src="img/chris.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>STEWIE GRIFFIN</h3>
+                          <p>baby monster</p>
+                          <div class="image">
+                              <img src="img/stewie.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>BRIAN GRIFFIN</h3>
+                          <p>talking dog</p>
+                          <div class="image">
+                              <img src="img/brian.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>GLENN QUAGMIRE</h3>
+                          <p>hook-up master</p>
+                          <div class="image">
+                              <img src="img/glen.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="single">
+                      <div class="circle"></div>
+                      <div class="inner">
+                          <h3>CLEVELAND BROWN</h3>
+                          <p>mild blackman</p>
+                          <div class="image">
+                              <img src="img/cleveland.jpg" alt="">
+                          </div>
+                          <div class="social">
+                              <a href="#"><i class="fa fa-facebook-square"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<footer class="down"><span class="f82"> 娱乐指南| 服务条款 | 使用规范 | 客服中心 | 隐私保护指引</span><br>
+<span class="f75">Copyright © 2022-2032 All Rights Reserved.</span></footer>
+</body>
+</html>
